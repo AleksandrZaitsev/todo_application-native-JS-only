@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList-Task1</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="App/utils/utils.js"></script>
+    <script type="text/javascript" src="App/context.js"></script>
+    <script type="text/javascript" src="App/models/Task.js"></script>
+    <script type="text/javascript" src="App/collections/TasksCollection.js"></script>
+    <script type="text/javascript" src="App/utils/access.js"></script>
+    <script type="text/javascript" src="App/views/TaskView.js"></script>
+    <script type="text/javascript" src="App/views/TasksView.js"></script>
+    <script type="text/javascript" src="App/views/TitleView.js"></script>
+    <script type="text/javascript" src="App/views/AddView.js"></script>
+    <script type="text/javascript" src="App/app.js"></script>
+    <script type="text/javascript" src="App/controllers/Controller.js"></script>
+
+</head>
+<body>
+
+    <script type="text/template" id="addTemplate">
+        <form action='' id='addTask'>
+             <input type='text' placeholder="Your new task" id='input'>
+             <button id='add'>Add task</button>
+        </form>
+    </script>
+
+    <script type="text/template" id="taskTemplate">
+        <span>{{title}}</span>  <button class='edit'>Edit</button>  <button class='delete'>Delete</button>
+    </script>
+
+    <div id='mainContainer'>
+        <div id="titleContainer"></div>
+        <div id="addContainer"></div>
+        <div id="taskContainer"></div>
+     </div>
+
+</body>
+</html>
